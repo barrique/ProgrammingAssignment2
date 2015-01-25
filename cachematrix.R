@@ -53,7 +53,7 @@ cacheSolve <- function(x, ...)
 
 
 ##
-# Uncomment the rows below for testing
+# Uncomment the following lines for testing
 #
 #m <- matrix(c(1,2,3, 0,1,4, 5,6,0), nrow = 3, ncol = 3, byrow = TRUE)
 #v <- makeCacheMatrix(m)
