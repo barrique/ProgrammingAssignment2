@@ -32,7 +32,7 @@ makeCacheMatrix <- function(x = matrix())
 #
 # The cacheSolve function is also as similar as possible to its vector counterpart.
 # It first retrieves the inverse from x, checks if it is an actual matrix, and in case returns the cached value.
-# Otherwise it computes the inverse with the method solve, and caches it on x for future retrievals.
+# Otherwise it computes the inverse with the method solve, and caches it on x for future retrieval.
 
 cacheSolve <- function(x, ...) 
 {
@@ -51,8 +51,11 @@ cacheSolve <- function(x, ...)
   i
 }
 
-m <- matrix(c(1,2,3, 0,1,4, 5,6,0), nrow = 3, ncol = 3, byrow = TRUE)
-m2 <- matrix(c(1,2,5, 0,1,4, 5,6,0), nrow = 3, ncol = 3, byrow = TRUE)
-v <- makeCacheMatrix(m)
-cacheSolve(v)
-cacheSolve(v)
+
+##
+# Uncomment the rows below for testing
+#
+#m <- matrix(c(1,2,3, 0,1,4, 5,6,0), nrow = 3, ncol = 3, byrow = TRUE)
+#v <- makeCacheMatrix(m)
+#cacheSolve(v)
+#cacheSolve(v)
